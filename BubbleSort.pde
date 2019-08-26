@@ -1,4 +1,4 @@
-Element[] elements = new Element[400];
+Element[] elements = new Element[400]; //Can Change the element number up to 500 for the set size(1100, 800)
 
 float xPos;
 float yPos;
@@ -23,17 +23,17 @@ void draw(){
   
   if(isCompletelyMixed() == false && letsSort == false){
     if(isCompletelySorted()){
-      delay(3500);
+      delay(3500); //Delay time to display the complete sorted elements
     }
     mix();
   } else if(isCompletelyMixed() == true){
-    delay(2000);
+    delay(2000); //Delay time to display the complete mixed elements
     letsSort = true;
   }
 
   if(letsSort == true){
-    slctSort();
-    //bblSort();
+    slctSort(); //Selection Sort
+    //bblSort();//Bubble Sort
   }
   if(isCompletelySorted()){
     letsSort = false;
